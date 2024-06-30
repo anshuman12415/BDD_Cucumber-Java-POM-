@@ -19,7 +19,7 @@ public class Steps {
 	@Given("User Launch Chrome browser")
 	public void user_launch_chrome_browser() {
 		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user") + "/BDD-Cucumber/drivers/chromedriver");
+				System.getProperty("/Users/anshumanyadav/eclipse-workspace/BDD-Cucumber/drivers/chromedriver"));
 		driver = new ChromeDriver();
 		lp = new LoginPage(driver);
 	}
@@ -63,7 +63,7 @@ public class Steps {
 
 	@Then("Page Title should be {string} And close browser")
 	public void page_title_should_be_and_close_browser(String string) {
-		//driver.close();
+		driver.close();
 		driver.quit();
 	}
 
