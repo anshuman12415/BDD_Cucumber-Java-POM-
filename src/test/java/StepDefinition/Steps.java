@@ -1,4 +1,4 @@
-package StepDefinition;
+package StepDefinition;  // Change to lowercase
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +15,7 @@ public class Steps {
 
     @Given("User Launch Chrome browser")
     public void user_launch_chrome_browser() {
-        System.setProperty("webdriver.chrome.driver", "/Users/anshumanyadav/Documents/Drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/anshumanyadav/Documents/Drivers/chromedriver2");
         driver = new ChromeDriver();
         lp = new LoginPage(driver);
     }
